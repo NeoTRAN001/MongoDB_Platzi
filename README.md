@@ -1,4 +1,4 @@
-# Curso de MongoDB y Redis en Platzi
+# Course of MongoDB and Redis de Platzi
 
 # API in Python, MongoDB and Redis
 
