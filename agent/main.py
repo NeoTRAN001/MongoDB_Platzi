@@ -1,5 +1,6 @@
 import requests
 import pymongo
+import time
 
 API_URL = 'https://api.coinmarketcap.com/v1/ticker/' # API address
 
