@@ -40,11 +40,11 @@ def tickers():
     elif request.method == 'DELETE':
         result = remove_currency() # Else if the method is DELETE, then execute this function
         
-        if result > 0:
+        if result > 0: # If the result of deleting elements is greater than 0
             return jsonify({'text': 'Deleted document'}), 204 # FLASK allows you to add another parameter to the return
         else:
-            return jsonify({'error': 'The documents do not exist'}), 404
-            
+            return jsonify({'error': 'The documents do not exist'}), 404 # Answer from the http
+
 @app.route("/top20", methods=['GET'])
 def top20():
     return jsonify(get_document_and_top20(True))
